@@ -1,13 +1,15 @@
-#!/usr/bin/env python3.6
+#!/usr/bin/env python3
 
-from ..cli import run
+from brain_games import cli
 
 
 def main():
     print('Welcome to the Brain Games!')
     print()
-    run()
+    cli.run()
 
 
 if __name__ == "__main__":
     main()
+
+
