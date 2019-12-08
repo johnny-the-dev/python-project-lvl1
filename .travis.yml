@@ -1,1 +1,9 @@
-language: python 3.6
+language: python
+
+python: 3.6
+
+before_install: pip install poetry
+
+install: poetry install --dev flake8
+
+script: make lint
