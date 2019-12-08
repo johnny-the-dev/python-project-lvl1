@@ -4,6 +4,6 @@ python: 3.6
 
 before_install: pip install poetry
 
-install: poetry install --no-dev flake8
+install: poetry install
 
 script: make lint
