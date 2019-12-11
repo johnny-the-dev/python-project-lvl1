@@ -17,7 +17,8 @@ if __name__ == "__main__":
 
 
 def brain_even():
-    user_name = cli.run()
+    user_name = cli.get_user_name()
+    print('Hello, {}'.format(user_name))
     ANSWERS = {
         'yes': 0,
         'no': 1
