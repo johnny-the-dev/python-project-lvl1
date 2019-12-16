@@ -4,7 +4,9 @@ from brain_games import even_game
 
 
 def main():
-    print('Welcome to the Brain Games!', 'Answer "yes" if number even otherwise answer "no".', '',sep='\n')
+    print('Welcome to the Brain Games!')
+    print('Answer "yes" if number even otherwise answer "no".')
+    print()
     even_game.brain_even()
 
 
