@@ -18,6 +18,6 @@ def play_calc(user_name):
         print('Correct!')
         return True
     else:
-        print("{} is wrong answer ;(. Correct answer was {}.".format(res, ans))
+        print("{} is wrong answer ;(. Correct answer was {}.".format(ans, res))
         print("Let's try again, {}!".format(user_name))
         return False
