@@ -27,15 +27,3 @@ def play_even(user_name):
     else:
         print('Wrong answer!')
     return isright
-
-
-def brain_even():
-    user_name = prompt.string('May I have your name? ')
-    print('Hello, {}!'.format(user_name))
-    print()
-
-    for idx in range(3):
-        if not play_even(user_name):
-            return None
-
-    print('Congratulations, {}!'.format(user_name))
