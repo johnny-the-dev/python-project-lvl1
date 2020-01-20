@@ -2,6 +2,7 @@
 
 import random
 import prompt
+from brain_games.games.result_check import result_check
 
 
 def gcd(num1, num2):
@@ -11,7 +12,7 @@ def gcd(num1, num2):
         if a > b:
             a = a - b
         else:
-            b = b - a    
+            b = b - a
     return a
 
 
@@ -21,10 +22,4 @@ def play_gcd(user_name):
     print('Question: {} {}'.format(number1, number2))
     ans = prompt.integer('Your answer: ')
     res = gcd(number1, number2)
-    if ans == res:
-        print('Correct!')
-        return True
-    else:
-        print("{} is wrong answer ;(. Correct answer was {}.".format(ans, res))
-        print("Let's try again, {}!".format(user_name))
-        return False
+    return result_check(user_name, ans, res)

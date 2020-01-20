@@ -2,6 +2,7 @@
 
 import random
 import prompt
+from brain_games.games.result_check import result_check
 
 
 def play_calc(user_name):
@@ -14,10 +15,4 @@ def play_calc(user_name):
         res = number1 + number2
     else:
         res = number1 - number2
-    if ans == res:
-        print('Correct!')
-        return True
-    else:
-        print("{} is wrong answer ;(. Correct answer was {}.".format(ans, res))
-        print("Let's try again, {}!".format(user_name))
-        return False
+    return result_check(user_name, ans, res)

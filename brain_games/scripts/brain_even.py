@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
 
-from brain_games.games import even_game, start, greeting
+from brain_games.games.greeting import greet
+from brain_games.games.start import play
+from brain_games.games.even_game import play_even
 
 
 def main():
-    greeting.greet('Answer "yes" if number even otherwise answer "no".')
-    start.play(even_game.play_even)
+    greet('Answer "yes" if number even otherwise answer "no".')
+    play(play_even)
 
 
 if __name__ == "__main__":
