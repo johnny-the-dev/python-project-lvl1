@@ -1,8 +1,13 @@
 [tool.poetry]
 name = "Brain-Games-JohnEdition"
 version = "0.7.1"
-description = ""
-authors = ["johnalt"]
+description = "Games for your brains"
+authors = ["Ivan Arkhipov"]
+repository = "https://github.com/johnalt/python-project-lvl1"
+classifiers = [
+  "Programming Language :: Python :: 3.6",
+  "Topic :: Games/Entertainment"
+]
 packages = [
   { include = "brain_games" },
 ]

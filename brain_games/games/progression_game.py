@@ -1,4 +1,6 @@
-from brain_games.games.result_check import result_check
+#!/usr/bin/env python3
+
+from brain_games.result_check import result_check
 from random import randrange
 import prompt
 

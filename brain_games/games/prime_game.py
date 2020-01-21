@@ -3,7 +3,7 @@
 import random
 import prompt
 import math
-from brain_games.games.result_check import result_check
+from brain_games.result_check import result_check
 
 
 def prime_check(number):

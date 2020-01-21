@@ -2,7 +2,7 @@
 
 import random
 import prompt
-from brain_games.games.result_check import result_check
+from brain_games.result_check import result_check
 
 
 def play_calc(user_name):
