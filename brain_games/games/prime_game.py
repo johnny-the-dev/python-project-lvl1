@@ -21,8 +21,8 @@ def prime_check(number):
 def play_prime(user_name):
     number = random.randint(2, 300)
     print('Question: {}'.format(number))
-    ans = prompt.string('Your answer: ')
     res = prime_check(number)
+    ans = prompt.string('Your answer: ')    
     if ans in ['yes', 'no']:
         return result_check(user_name, ans, res)
     else:
