@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
-from brain_games.games.greeting import greet
-from brain_games.games.start import play
 from brain_games.games.prime_game import play_prime
+from brain_games.games.start import play
+from brain_games.games.greeting import greet
 
 
 def main():

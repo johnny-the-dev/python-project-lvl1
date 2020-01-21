@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
+from brain_games.games.gcd_game import play_gcd
 from brain_games.games.greeting import greet
 from brain_games.games.start import play
-from brain_games.games.gcd_game import play_gcd
 
 
 def main():
