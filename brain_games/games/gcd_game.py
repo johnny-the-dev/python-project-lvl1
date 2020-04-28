@@ -1,8 +1,8 @@
-#!/usr/bin/env python3
-
 import random
-import prompt
-from brain_games.result_check import result_check
+
+
+RULE_TEXT = 'Find the greatest common divisor of given numbers.'
+ANSWER_PATTERN = '-\d|\d'
 
 
 def gcd(num1, num2):
@@ -16,10 +16,8 @@ def gcd(num1, num2):
     return a
 
 
-def play_gcd(user_name):
+def generate_round():
     number1 = random.randint(1, 100)
     number2 = random.randint(1, 100)
-    print('Question: {} {}'.format(number1, number2))
-    ans = prompt.integer('Your answer: ')
     res = gcd(number1, number2)
-    return result_check(user_name, ans, res)
+    return res, 'Question: {} {}'.format(number1, number2)

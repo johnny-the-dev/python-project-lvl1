@@ -1,9 +1,9 @@
-#!/usr/bin/env python3
-
 import random
-import prompt
 import math
-from brain_games.result_check import result_check
+
+
+RULE_TEXT = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+ANSWER_PATTERN = 'yes|no'
 
 
 def prime_check(number):
@@ -18,13 +18,7 @@ def prime_check(number):
         return 'no'
 
 
-def play_prime(user_name):
+def generate_round():
     number = random.randint(2, 300)
-    print('Question: {}'.format(number))
     res = prime_check(number)
-    ans = prompt.string('Your answer: ')
-    if ans in ['yes', 'no']:
-        return result_check(user_name, ans, res)
-    else:
-        print('Wrong answer!')
-        return False
+    return res, 'Question: {}'.format(number)

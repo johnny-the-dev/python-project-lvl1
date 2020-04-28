@@ -1,13 +1,11 @@
 #!/usr/bin/env python3
 
-from brain_games.greeting import greet
-from brain_games.start import play
-from brain_games.games.progression_game import play_progression
+from brain_games import start
+from brain_games.games import progression_game
 
 
 def main():
-    greet('What number is missing in the progression?')
-    play(play_progression)
+    start.play(progression_game)
 
 
 if __name__ == "__main__":
