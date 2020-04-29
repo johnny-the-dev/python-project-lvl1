@@ -2,7 +2,7 @@ import random
 
 
 RULE_TEXT = 'Find the greatest common divisor of given numbers.'
-ANSWER_PATTERN = '-\d|\d'
+ANSWER_PATTERN = '\\d'
 
 
 def gcd(num1, num2):
@@ -20,4 +20,5 @@ def generate_round():
     number1 = random.randint(1, 100)
     number2 = random.randint(1, 100)
     res = gcd(number1, number2)
-    return res, 'Question: {} {}'.format(number1, number2)
+    question = 'Question: {} {}'.format(number1, number2)
+    return res, question

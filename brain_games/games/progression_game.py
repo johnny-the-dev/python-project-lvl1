@@ -2,7 +2,7 @@ from random import randrange
 
 
 RULE_TEXT = 'What number is missing in the progression?'
-ANSWER_PATTERN = '-\d|d'
+ANSWER_PATTERN = '\\d+'
 
 
 def generate_round():
@@ -14,4 +14,5 @@ def generate_round():
     el_search = randrange(len(prog_list))
     res = prog_list[el_search]
     prog_list[el_search] = '..'
-    return res, 'Question: {}'.format(prog_list)
+    question = 'Question: {}'.format(prog_list)
+    return res, question

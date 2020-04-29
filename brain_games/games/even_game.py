@@ -12,4 +12,5 @@ def even_check(number):
 def generate_round():
     number = random.randint(1, 100)
     res = even_check(number)
-    return res, 'Question: {}'.format(number)
+    question = 'Question: {}'.format(number)
+    return res, question

@@ -21,4 +21,5 @@ def prime_check(number):
 def generate_round():
     number = random.randint(2, 300)
     res = prime_check(number)
-    return res, 'Question: {}'.format(number)
+    question = 'Question: {}'.format(number)
+    return res, question
