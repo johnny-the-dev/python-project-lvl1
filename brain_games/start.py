@@ -12,23 +12,32 @@ def get_user_name(rule_text):
     return user_name
 
 
+def check_answer(user_ans, calc_res, ans_pattern):
+    if not re.match(ans_pattern, user_ans):
+        print('Wrong answer!')
+        return False
+
+    if str(calc_res) != user_ans:
+        print(f'{user_ans} is wrong answer ;(. Correct answer was {calc_res}.')
+        return False
+
+    print('Correct!')
+    return True
+
+
 def play(game):
     user_name = get_user_name(game.RULE_TEXT)
-    isFinalSucess = True
+    isSuccess = True
+
     for _ in range(ROUND_NUMBER):
         res, question = game.generate_round()
         print(question)
         ans = prompt.string('Your answer: ').lower()
-        if not re.match(game.ANSWER_PATTERN, ans):
-            print('Wrong answer!')
-            isFinalSucess = False
-            break
-        if str(res) != ans:
-            print(f'{ans} is wrong answer ;(. Correct answer was {res}.')
+        ans_pattern = game.ANSWER_PATTERN
+        isSuccess = check_answer(ans, res, ans_pattern)
+        if not isSuccess:
             print(f'Let`s try again, {user_name}!')
-            isFinalSucess = False
             break
-        print('Correct!')
 
-    if isFinalSucess:
+    if isSuccess:
         print(f'Congratulations, {user_name}!')
