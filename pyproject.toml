@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "Brain-Games-JohnEdition"
-version = "0.7.1"
+version = "0.8"
 description = "Games for your brains"
 authors = ["Ivan Arkhipov"]
 repository = "https://github.com/johnalt/python-project-lvl1"
