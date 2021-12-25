@@ -24,8 +24,8 @@ def get_user_name(rule_text):
 def check_answer(user_answer, calc_result):
     if str(calc_result) != user_answer:
         print(
-            f'{user_answer} is wrong answer ;(. '\
-            f'Correct answer was {calc_result}.'
+            f"'{user_answer}' is wrong answer ;(. "\
+            f"Correct answer was '{calc_result}'."
             )
         return False
 
@@ -53,8 +53,8 @@ def play(game):
         
         is_success = check_answer(user_answer, result)
         if not is_success:
-            print(f'Let\'s try again, "{user_name}"!')
+            print(f'Let\'s try again, {user_name}!')
             break
     
     else:
-        print(f'Congratulations, "{user_name}"!')
+        print(f'Congratulations, {user_name}!')
