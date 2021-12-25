@@ -53,8 +53,8 @@ def play(game):
         
         is_success = check_answer(user_answer, result)
         if not is_success:
-            print(f'Let`s try again, {user_name}!')
+            print(f'Let\'s try again, "{user_name}"!')
             break
     
     else:
-        print(f'Congratulations, {user_name}!')
+        print(f'Congratulations, "{user_name}"!')
