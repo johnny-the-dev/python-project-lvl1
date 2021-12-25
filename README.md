@@ -1,6 +1,6 @@
 Project for Hexlet: Brain-Games
 
-[![Build Status](https://travis-ci.com/johnalt/python-project-lvl1.svg?branch=master)](https://travis-ci.com/johnalt/python-project-lvl1)   [![Maintainability](https://api.codeclimate.com/v1/badges/1496a9d61fea445f35b4/maintainability)](https://codeclimate.com/github/johnalt/python-project-lvl1/maintainability)
+[![hexlet-check](https://github.com/johnny-the-dev/python-project-lvl1/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/johnny-the-dev/python-project-lvl1/actions/workflows/hexlet-check.yml)  [![Maintainability](https://api.codeclimate.com/v1/badges/1496a9d61fea445f35b4/maintainability)](https://codeclimate.com/github/johnalt/python-project-lvl1/maintainability)
 
 
 brain-even
