@@ -26,7 +26,7 @@ def check_answer(user_answer, calc_result):
         print(
             f"'{user_answer}' is wrong answer ;(. "
             f"Correct answer was '{calc_result}'."
-            )
+        )
         return False
 
     print('Correct!')
