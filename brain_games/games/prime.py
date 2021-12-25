@@ -6,20 +6,19 @@ RULE_TEXT = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 ANSWER_PATTERN = 'yes|no'
 
 
-def prime_check(number):
+def is_prime(number):
     if number == 2:
-        return 'yes'
+        return True
     divider = int(math.sqrt(number))
-    while number % divider != 0:
+    while divider > 1:
+        if number % divider == 0:
+            return False
         divider -= 1
-    if divider == 1:
-        return 'yes'
-    else:
-        return 'no'
+    return True
 
 
 def generate_round():
     number = random.randint(2, 300)
-    res = prime_check(number)
+    result = 'yes' if is_prime(number) else 'no'
     question = 'Question: {}'.format(number)
-    return res, question
+    return result, question
