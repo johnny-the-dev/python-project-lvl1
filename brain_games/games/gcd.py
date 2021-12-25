@@ -2,7 +2,7 @@ import random
 
 
 RULE_TEXT = 'Find the greatest common divisor of given numbers.'
-ANSWER_PATTERN = '\\d'
+ANSWER_PATTERN = '[-+]?\\d+'
 
 
 def gcd(num1, num2):
