@@ -8,5 +8,5 @@ ANSWER_PATTERN = 'yes|no'
 def generate_round():
     number = random.randint(1, 100)
     result = 'yes' if number % 2 == 0 else 'no'
-    question = 'Question: {}'.format(number)
+    question = str(number)
     return result, question

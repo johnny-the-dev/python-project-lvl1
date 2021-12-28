@@ -19,6 +19,6 @@ def gcd(num1, num2):
 def generate_round():
     number1 = random.randint(1, 100)
     number2 = random.randint(1, 100)
-    res = gcd(number1, number2)
-    question = 'Question: {} {}'.format(number1, number2)
-    return res, question
+    result = gcd(number1, number2)
+    question = '{} {}'.format(number1, number2)
+    return result, question
