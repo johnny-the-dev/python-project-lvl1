@@ -31,6 +31,7 @@ def play(game):
                 f"'{user_answer}' is wrong answer ;(. "
                 f"Correct answer was '{result}'."
             )
+            print(f"Let's try again, {user_name}!")
             break
 
         print('Correct!')
