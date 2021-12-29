@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "hexlet-code"
-version = "0.9"
+version = "0.10"
 description = "Games for your brains"
 authors = ["Ivan Arkhipov"]
 repository = "https://github.com/johnny-the-dev/python-project-lvl1"
