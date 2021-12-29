@@ -27,26 +27,26 @@ Brain-Games
 [![asciicast](https://asciinema.org/a/Z8Tzq3kcaOsmBOOia7QGntUxr.svg)](https://asciinema.org/a/Z8Tzq3kcaOsmBOOia7QGntUxr)
 
 
-brain-even
+Игра: "Проверка на чётность"
 
 [![asciicast](https://asciinema.org/a/f9Tk6F6C88IPGL4TfwbBnSul1.svg)](https://asciinema.org/a/f9Tk6F6C88IPGL4TfwbBnSul1)
 
 
-brain-calc
+Игра: "Калькулятор"
 
 [![asciicast](https://asciinema.org/a/rpABld2p8sP8Mk84PgCv2kdKK.svg)](https://asciinema.org/a/rpABld2p8sP8Mk84PgCv2kdKK)
 
 
-brain-gcd
+Игра "НОД"
 
 [![asciicast](https://asciinema.org/a/TCyuzm3EgqhmGrQEeb87JNbAi.svg)](https://asciinema.org/a/TCyuzm3EgqhmGrQEeb87JNbAi)
 
 
-brain-progression
+Игра "Арифметическая прогрессия"
 
 [![asciicast](https://asciinema.org/a/6ZiSFDNCLKSeQ2rSk5UD7AdIh.svg)](https://asciinema.org/a/6ZiSFDNCLKSeQ2rSk5UD7AdIh)
 
 
-brain-prime
+Игра "Простое ли число?"
 
 [![asciicast](https://asciinema.org/a/NrmemMYdG3qSvViXfUJ5yqGWr.svg)](https://asciinema.org/a/NrmemMYdG3qSvViXfUJ5yqGWr)
