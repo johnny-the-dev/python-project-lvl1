@@ -19,7 +19,7 @@ def play(game):
     for _ in range(NUMBER_OF_ROUNDS):
 
         result, question = game.generate_round()
-        print('Question: ', question)
+        print('Question:', question)
         user_answer = prompt.string('Your answer: ').lower()
 
         while re.fullmatch(game.ANSWER_PATTERN, user_answer) is None:
